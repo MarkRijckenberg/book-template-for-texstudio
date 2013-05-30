@@ -8,6 +8,8 @@
 %
 % Original author:
 % Mathias Legrand (legrand.mathias@gmail.com)
+% Updates by:
+% Mark Rijckenberg
 %
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
@@ -33,6 +35,35 @@
 % e.g. 920px width and 460px height.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Prerequisites: Ubuntu 12.04, 12.10 or 13.04, texlive-binaries 2012, texlive-latex-base 2012, texlive-publishers, 
+%                texlive-latex-extra, texlive-fonts-recommended, TeXstudio 2.5.2 (SVN 3733M) or newer, biber, biblatex
+
+% USAGE INSTRUCTIONS:
+% Get more information about latex package by using Terminal command   texdoc <packagename> 
+% for example: texdoc rotating     or     texdoc aastex    or texdoc titling
+% or visit this website: http://www.texdoc.net/   and search for the packagename
+% TeXstudio 2.5.2 (SVN 3733M) binary works a lot better and is more stable than texmaker in Ubuntu 13.04
+% Build procedure in TeXstudio 2.5.2 (SVN 3733M) (DO NOT USE texmaker):
+% 1) OPTIONAL: press Tools:Clean within texstudio to delete old output files
+% 2) press F1 to build and view output PDF
+% and to correctly compile this .tex file into a valid .PDF output file.
+% always save graphics files in f<sequence-number>.PDF format, not in .JPG or .PNG format
+
+% The tocbibind package can automatically add bibliography, index, TOC, LOF, and LOT to the table
+% of contents. It's even capable of using numbered headings instead of the default
+% unnumbered ones.
+
+% Use \cite[page 23]{kennedy1998cationic}  for example when citing bibliography references contained in the 
+% bibliography.bib bibtex file
+% Use Figure \ref{fig:Array} on page \pageref{fig:Array} for example when referring to a figure at the end of the
+% document
+
+% Other handy URL's:
+% http://detexify.kirelabs.org/classify.html
+% http://www.ottobib.com/
+% http://scholar.google.be
+
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
