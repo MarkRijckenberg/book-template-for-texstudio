@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.1)  3 JUN 2013 00:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.5.1)  3 JUN 2013 00:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1331,19 +1331,19 @@ Package biblatex Warning: 'babel' detected but 'csquotes' missing.
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 107.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -1395,7 +1395,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \makeMPintoPDFobject=\count380
 \everyMPtoPDFconversion=\toks42
 )
-LaTeX Info: Redefining \microtypecontext on input line 72.
+LaTeX Info: Redefining \microtypecontext on input line 107.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1416,8 +1416,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 72.
-Package biblatex Info: Reference segment=0 on input line 72.
+Package biblatex Info: Reference section=0 on input line 107.
+Package biblatex Info: Reference segment=0 on input line 107.
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1436,7 +1436,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box53
-LaTeX Font Info:    Try loading font information for T1+pag on input line 83.
+LaTeX Font Info:    Try loading font information for T1+pag on input line 118.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
@@ -1445,75 +1445,76 @@ File: t1pag.fd 2001/06/04 font definitions for T1/pag.
 File: ./Pictures/background.pdf Graphic file (type pdf)
 
 <use ./Pictures/background.pdf>
-Package pdftex.def Info: ./Pictures/background.pdf used on input line 93.
+Package pdftex.def Info: ./Pictures/background.pdf used on input line 128.
 (pdftex.def)             Requested size: 584.18106pt x 835.11795pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Pictures/background.pdf>
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 97.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 132.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 103.
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 10
-3.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 13
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 10
-3.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 13
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 10
-3.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 13
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 10
-3.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 13
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 103.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 138.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 138.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 138.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1521,7 +1522,7 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
@@ -1531,12 +1532,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 File: ./Pictures/hubble.pdf Graphic file (type pdf)
 
 <use ./Pictures/hubble.pdf>
-Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 115.
+Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 150.
 (pdftex.def)             Requested size: 597.50787pt x 309.01158pt.
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 115.
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 150.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <20.74> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 115.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 150.
  (./main.toc
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <12> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 5.
@@ -1560,7 +1561,7 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
 File: ./Pictures/hubble.pdf Graphic file (type pdf)
 
 <use ./Pictures/hubble.pdf>
-Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 118.
+Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 160.
 (pdftex.def)             Requested size: 597.50787pt x 309.01158pt.
  (./main.lof
 Overfull \hbox (10.94998pt too wide) detected at line 11
@@ -1578,7 +1579,7 @@ Overfull \hbox (10.94998pt too wide) detected at line 11
 ]
 File: ./Pictures/hubble.pdf Graphic file (type pdf)
  <use ./Pictures/hubble.pdf>
-Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 122.
+Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 166.
 (pdftex.def)             Requested size: 597.50787pt x 309.01158pt.
  (./main.lot
 Overfull \hbox (10.94998pt too wide) detected at line 11
@@ -1595,7 +1596,7 @@ Overfull \hbox (10.94998pt too wide) detected at line 11
 Chapter 1.
 File: ./Pictures/hubble.pdf Graphic file (type pdf)
 <use ./Pictures/hubble.pdf>
-Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 135.
+Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 179.
 (pdftex.def)             Requested size: 597.50787pt x 309.01158pt.
  (./main.ptc
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <9> not available
@@ -1606,72 +1607,72 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <9> not available
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 197.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 197.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 197.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 174.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 218.
  [10]
 Chapter 2.
 File: ./Pictures/hubble.pdf Graphic file (type pdf)
 <use ./Pictures/hubble.pdf>
-Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 183.
+Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 227.
 (pdftex.def)             Requested size: 597.50787pt x 309.01158pt.
  (./main.ptc)
-Package mdframed Info: mdframed works in twoside mode on input line 191.
+Package mdframed Info: mdframed works in twoside mode on input line 235.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theoerem header of amsthm
-(mdframed)              on input line 191.
+(mdframed)              on input line 235.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 192.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 236.
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 192.
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 236.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 192.
-Package mdframed Info: mdframed works in twoside mode on input line 201.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 236.
+Package mdframed Info: mdframed works in twoside mode on input line 245.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theoerem header of amsthm
-(mdframed)              on input line 201.
-Package mdframed Info: mdframed works in twoside mode on input line 211.
+(mdframed)              on input line 245.
+Package mdframed Info: mdframed works in twoside mode on input line 255.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theoerem header of amsthm
-(mdframed)              on input line 211.
+(mdframed)              on input line 255.
  [11
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 240.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 284.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 240.
-Package mdframed Info: mdframed works in twoside mode on input line 249.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 284.
+Package mdframed Info: mdframed works in twoside mode on input line 293.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theoerem header of amsthm
-(mdframed)              on input line 249.
+(mdframed)              on input line 293.
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <6> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 284.
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 328.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 284.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 328.
  [12]
-Package mdframed Info: mdframed works in twoside mode on input line 304.
+Package mdframed Info: mdframed works in twoside mode on input line 348.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theoerem header of amsthm
-(mdframed)              on input line 304.
+(mdframed)              on input line 348.
  [13] [14
 
 ]
 Chapter 3.
 File: ./Pictures/hubble.pdf Graphic file (type pdf)
 <use ./Pictures/hubble.pdf>
-Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 332.
+Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 376.
 (pdftex.def)             Requested size: 597.50787pt x 309.01158pt.
  (./main.ptc)
 <./Pictures/placeholder.jpg, id=73, 351.3125pt x 193.72375pt>
 File: ./Pictures/placeholder.jpg Graphic file (type jpg)
 
 <use ./Pictures/placeholder.jpg>
-Package pdftex.def Info: ./Pictures/placeholder.jpg used on input line 355.
+Package pdftex.def Info: ./Pictures/placeholder.jpg used on input line 399.
 (pdftex.def)             Requested size: 175.6558pt x 96.86163pt.
  [15 <./Pictures/placeholder.jpg>] [16
 
@@ -1679,7 +1680,7 @@ Package pdftex.def Info: ./Pictures/placeholder.jpg used on input line 355.
 File: ./Pictures/hubble.pdf Graphic file (type pdf)
 
 <use ./Pictures/hubble.pdf>
-Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 368.
+Package pdftex.def Info: ./Pictures/hubble.pdf used on input line 412.
 (pdftex.def)             Requested size: 597.50787pt x 309.01158pt.
  [17] [18
 
@@ -1704,7 +1705,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  25346 strings out of 495059
  443026 string characters out of 3182031
- 703765 words of memory out of 3000000
+ 703766 words of memory out of 3000000
  27824 multiletter control sequences out of 15000+200000
  112346 words of font info for 228 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
