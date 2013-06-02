@@ -2,63 +2,73 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Text Chapter}{5}
+\contentsline {chapter}{Contents}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Paragraphs of Text}{5}
+\contentsline {chapter}{List of Figures}{5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Citation}{6}
+\contentsline {chapter}{List of Tables}{7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Lists}{6}
+\contentsline {chapter}{\numberline {1}Text Chapter}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}Numbered List}{6}
+\contentsline {section}{\numberline {1.1}Paragraphs of Text}{9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Bullet Points}{6}
+\contentsline {section}{\numberline {1.2}Citation}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.3}Descriptions and Definitions}{6}
+\contentsline {section}{\numberline {1.3}Lists}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}In-text Elements}{7}
+\contentsline {subsection}{\numberline {1.3.1}Numbered List}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Theorems}{7}
+\contentsline {subsection}{\numberline {1.3.2}Bullet Points}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Several equations}{7}
+\contentsline {subsection}{\numberline {1.3.3}Descriptions and Definitions}{10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}Single Line}{7}
+\contentsline {chapter}{\numberline {2}In-text Elements}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Definitions}{7}
+\contentsline {section}{\numberline {2.1}Theorems}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Notations}{7}
+\contentsline {subsection}{\numberline {2.1.1}Several equations}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Remarks}{8}
+\contentsline {subsection}{\numberline {2.1.2}Single Line}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Corollaries}{8}
+\contentsline {section}{\numberline {2.2}Definitions}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Propositions}{8}
+\contentsline {section}{\numberline {2.3}Notations}{11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}Several equations}{8}
+\contentsline {section}{\numberline {2.4}Remarks}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}Single Line}{8}
+\contentsline {section}{\numberline {2.5}Corollaries}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Examples}{8}
+\contentsline {section}{\numberline {2.6}Propositions}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.1}Equation and Text}{8}
+\contentsline {subsection}{\numberline {2.6.1}Several equations}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}Paragraph of Text}{9}
+\contentsline {subsection}{\numberline {2.6.2}Single Line}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}Exercises}{9}
+\contentsline {section}{\numberline {2.7}Examples}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Problems}{9}
+\contentsline {subsection}{\numberline {2.7.1}Equation and Text}{12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}Vocabulary}{9}
+\contentsline {subsection}{\numberline {2.7.2}Paragraph of Text}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Presenting Information}{11}
+\contentsline {section}{\numberline {2.8}Exercises}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Table}{11}
+\contentsline {section}{\numberline {2.9}Problems}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Figure}{11}
+\contentsline {section}{\numberline {2.10}Vocabulary}{13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{13}
+\contentsline {chapter}{\numberline {3}Presenting Information}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Books}{13}
+\contentsline {section}{\numberline {3.1}Table}{15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Articles}{13}
+\contentsline {section}{\numberline {3.2}Figure}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Books}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Articles}{17}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{19}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Index}{19}
 \contentsfinish 

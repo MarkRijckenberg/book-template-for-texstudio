@@ -62,6 +62,7 @@
 % Index
 \usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
 \usepackage{makeidx} % Required to make an index
+\usepackage{tocbibind}
 \makeindex % Tells LaTeX to create the files required for indexing
 
 %----------------------------------------------------------------------------------------
@@ -107,11 +108,18 @@ The Search for a Title\par % Book title
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 
-\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+\chapterimage{hubble} % Chapter heading image
 
 \pagestyle{empty} % No headers
 
 \tableofcontents % Print the table of contents itself
+%\chapter*{List of figures}
+\chapterimage{hubble} % Chapter heading image
+\listoffigures
+
+%\chapter*{List of tables}
+\chapterimage{hubble} % Chapter heading image
+\listoftables
 
 \cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
 
@@ -121,7 +129,8 @@ The Search for a Title\par % Book title
 %	CHAPTER 1
 %----------------------------------------------------------------------------------------
 
-\chapterimage{chapter_head_2.pdf} % Chapter heading image
+%\chapterimage{chapter_head_2.pdf} % Chapter heading image
+\chapterimage{hubble} % Chapter heading image
 
 \chapter{Text Chapter}
 
@@ -318,7 +327,7 @@ Definition of word.
 %	CHAPTER 3
 %----------------------------------------------------------------------------------------
 
-\chapterimage{chapter_head_1.pdf} % Chapter heading image
+\chapterimage{hubble} % Chapter heading image
 
 \chapter{Presenting Information}
 
@@ -346,6 +355,11 @@ Treatment 3 & 0.0009271 & 0.296 \\
 \centering\includegraphics[scale=0.5]{placeholder}
 \caption{Figure caption}
 \end{figure}
+
+
+
+
+
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY

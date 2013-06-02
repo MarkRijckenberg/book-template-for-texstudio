@@ -1,16 +1,16 @@
 [0] Config.pm:300> INFO - This is Biber 0.9.9
 [0] Config.pm:303> INFO - Logfile is 'main.blg'
-[1] biber:145> INFO - === Thu May 30, 2013, 22:58:20
+[1] biber:145> INFO - === Sun Jun  2, 2013, 21:36:22
 [1] Biber.pm:271> INFO - Reading 'main.bcf'
 [18] Biber.pm:586> INFO - Found 3 citekeys in bib section 0
 [27] Biber.pm:2585> INFO - Processing bib section 0
-[45] Biber.pm:2677> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[46] bibtex.pm:829> INFO - Decoding LaTeX character macros into UTF-8
-[46] bibtex.pm:833> INFO - Finished Decoding LaTeX character macros into UTF-8
-[47] bibtex.pm:704> INFO - Found BibTeX data source 'bibliography.bib'
-[98] Biber.pm:2480> INFO - Sorting list 'MAIN' keys
-[98] Biber.pm:2484> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[113] Biber.pm:2480> INFO - Sorting list 'SHORTHANDS' keys
-[113] Biber.pm:2484> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[117] bbl.pm:427> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[117] bbl.pm:498> INFO - Output to main.bbl
+[46] Biber.pm:2677> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[47] bibtex.pm:829> INFO - Decoding LaTeX character macros into UTF-8
+[47] bibtex.pm:833> INFO - Finished Decoding LaTeX character macros into UTF-8
+[48] bibtex.pm:704> INFO - Found BibTeX data source 'bibliography.bib'
+[101] Biber.pm:2480> INFO - Sorting list 'MAIN' keys
+[101] Biber.pm:2484> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[116] Biber.pm:2480> INFO - Sorting list 'SHORTHANDS' keys
+[116] Biber.pm:2484> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[120] bbl.pm:427> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[120] bbl.pm:498> INFO - Output to main.bbl
