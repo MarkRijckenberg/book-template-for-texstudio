@@ -24,11 +24,13 @@ plot(p)
 
 Sweave embeds the results and compiles this .Rnw Sweave document into a .tex document!
 
-After running Sweave('test.Rnw') inside Rstudio, you can run pdflatex test.tex in a Terminal 
+Simply execute the following commands in a Terminal session:
 
-(outside R and outside Rstudio)
+R CMD Sweave Rstudio-Sweave-sample-document.Rnw
 
-session to obtain the final PDF document. 
+pdflatex Rstudio-Sweave-sample-document.tex
+
+evince Rstudio-Sweave-sample-document.pdf
 
 \end{center}
 
