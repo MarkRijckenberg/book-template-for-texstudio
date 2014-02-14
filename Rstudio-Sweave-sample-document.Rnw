@@ -22,6 +22,8 @@ p <- ggmap(map)
 plot(p)
 @
 
+\end{center}
+
 Sweave embeds the results and compiles this .Rnw Sweave document into a .tex document!
 
 Simply execute the following commands in a Terminal session:
@@ -31,8 +33,6 @@ R CMD Sweave Rstudio-Sweave-sample-document.Rnw
 pdflatex Rstudio-Sweave-sample-document.tex
 
 evince Rstudio-Sweave-sample-document.pdf
-
-\end{center}
 
 Follow the following instructions to install JGR() and Deducer to add extra functionality to R.
 
