@@ -34,17 +34,11 @@ evince Rstudio-Sweave-sample-document.pdf
 
 \end{center}
 
-Here is an example of importing a .csv file from github directly into R:
+Follow the following instructions to install JGR() and Deducer to add extra functionality to R.
 
-\begin{center}
-<<>>=
+Deducer includes a very powerful Plot Builder GUI.
 
-library(RCurl)
-x <- getURL("https://raw.github.com/j2kun/bandits-and-stocks/master/stocks/fortune-500.csv")
-y <- read.csv(text = x)
-
-@
-\end{center}
+http://r-interface.blogspot.be/2012/04/install-r-jgr-and-deducer-in-ubuntu.html
 
 \end{document}
 
