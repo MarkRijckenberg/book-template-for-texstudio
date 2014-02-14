@@ -34,7 +34,17 @@ evince Rstudio-Sweave-sample-document.pdf
 
 \end{center}
 
+Here is an example of importing a .csv file from github directly into R:
 
+\begin{center}
+<<>>=
+
+library(RCurl)
+x <- getURL("https://raw.github.com/j2kun/bandits-and-stocks/master/stocks/fortune-500.csv")
+y <- read.csv(text = x)
+
+@
+\end{center}
 
 \end{document}
 
