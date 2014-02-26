@@ -37,10 +37,6 @@ The goal of this lab is to introduce you to R and RStudio, which you'll be using
 
 As the labs progress, you are encouraged to explore beyond what the labs dictate; a willingness to experiment will make you a much better programmer.  Before we get to that stage, however, you need to build some basic fluency in R.  Today we begin with the fundamental building blocks of R and RStudio: the interface, reading in data, and basic commands.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=4.5 in]{rinterface.png}
-\end{figure}
 
 The panel in the upper right contains your \emph{workspace} as well as a history of the commands that you've previously entered.  Any plots that you generate will show up in the panel in the lower right corner.
 
