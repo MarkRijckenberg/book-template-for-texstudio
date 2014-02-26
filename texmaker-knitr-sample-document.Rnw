@@ -8,7 +8,7 @@
 %% cd; rm knitr_*.tar.gz
 %% git clone https://github.com/yihui/knitr.git
 %% sudo apt-get update
-%% sudo apt-get install texinfo texmaker
+%% sudo apt-get install texinfo texmaker r-base-core r-base
 %% sudo apt-get install texlive-fonts-extra
 %% R CMD build knitr
 %% R CMD INSTALL knitr_*.tar.gz
