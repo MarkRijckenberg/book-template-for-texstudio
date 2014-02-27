@@ -51,10 +51,16 @@
 % Texmaker 4.1.1 or newer binary 
 
 % Build procedure in texmaker 4.1.1 or newer:
-% step 1) Configuration -> Texmaker::Options::Configure Texmaker::Commands::R Sweave 
+% step 1) Configuration:
+%
+% Texmaker::Options::Configure Texmaker::Commands::R Sweave 
 % command should be  Rscript -e "library(knitr); knit('%.Rnw')"
+%
 % Texmaker::Options::Configure Texmaker::Quick Build command option should be 
 % Sweave + pdflatex + View PDF
+%
+% Texmaker::Options::Configure Texmaker::Commands::Bib(la)tex should be   biber %
+%
 % step 2) OPTIONAL: press Tools:Clean within texmaker to delete old output files
 % step 3) REQUIRED: press F1 to build and view output PDF
 % step 4) REQUIRED: press F12 to generate index file and create index chapter
@@ -104,6 +110,7 @@
 %% texmaker texmaker-knitr-sample-document.Rnw 
 %% Configure texmaker version 4.1.1 or newer as follows:
 %% Texmaker::Options::Configure Texmaker::Commands::R Sweave command should be  Rscript -e "library(knitr); knit('%.Rnw')"
+%% Texmaker::Options::Configure Texmaker::Commands::Bib(la)tex should be   biber %
 %% Texmaker::Options::Configure Texmaker::Quick Build command option should be Sweave + pdflatex + View PDF
 %% Then press F1 key once to compile from .Rnw to .tex to .pdf file and to preview it automatically.
 
