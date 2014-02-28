@@ -242,6 +242,19 @@ The Search for a Title\par % Book title
 
 \section{Paragraphs of Text}\index{Paragraphs of Text}
 
+% How to use knitr and bash to download a file from the Internet:
+<<engine='bash'>>=
+cd 
+wget "http://www.openintro.org/stat/data/arbuthnot.R"
+@
+
+% How to integrate python code using knitr:
+<<engine='python'>>=
+def testing():
+    return "Hello, World!"
+print testing()
+@
+
 <<load-abrbuthnot-data, eval=TRUE>>=
 source("http://www.openintro.org/stat/data/arbuthnot.R")
 @
