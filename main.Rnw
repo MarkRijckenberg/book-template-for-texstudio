@@ -290,7 +290,8 @@ arbuthnot$boys
 
 <<plot-girls-vs-year, eval=TRUE>>=
 library(ggplot2)
-qplot(x = arbuthnot$year, y = arbuthnot$girls, color=arbuthnot$year)
+p <- qplot(x = arbuthnot$year, y = arbuthnot$girls, color=arbuthnot$year)
+p + theme_bw()
 @
 
 
@@ -304,7 +305,8 @@ arbuthnot$boys + arbuthnot$girls
 
 <<plot-total-vs-year, eval=TRUE>>=
 library(ggplot2)
-qplot(x = arbuthnot$year, y = arbuthnot$boys + arbuthnot$girls, geom="line")
+p <- qplot(x = arbuthnot$year, y = arbuthnot$boys + arbuthnot$girls, geom="line")
+p + theme_bw()
 @
 
 %------------------------------------------------
