@@ -164,6 +164,8 @@
 
 \input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
 
+% try this to change default knitr/R fonts:  
+% https://github.com/paciorek/stat243-fall-2013/wiki/literate-programming-(documents-with-code)%3A-knitr,-R-Markdown,-Sweave,-Latex,-etc.
 
 
 \begin{document}
