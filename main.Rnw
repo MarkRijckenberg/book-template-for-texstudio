@@ -303,9 +303,10 @@ p + theme_bw()
 arbuthnot$boys + arbuthnot$girls
 @
 
+
 <<plot-total-vs-year, eval=TRUE>>=
 library(ggplot2)
-p <- qplot(x = arbuthnot$year, y = arbuthnot$boys + arbuthnot$girls, geom="line")
+p <- qplot(x = arbuthnot$year, y = arbuthnot$boys + arbuthnot$girls, geom="line", color=arbuthnot$year)
 p + theme_bw()
 @
 
