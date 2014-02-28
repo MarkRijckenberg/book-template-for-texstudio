@@ -1,5 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The Legrand Orange Book
+%----------------------------------------------------------------------------------------
+%	The Legrand Orange Book
+%----------------------------------------------------------------------------------------
 % LaTeX Template
 % Version 1.2 (19/5/13)
 %
@@ -34,7 +35,9 @@
 % Chapter heading images should have a 2:1 width:height ratio,
 % e.g. 920px width and 460px height.
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	Prerequisites
+%----------------------------------------------------------------------------------------
 
 % Prerequisites: Lubuntu 13.10 or newer, texlive-latex-extra, texlive-bibtex-extra, latex-xcolor, biber, 
 %                texlive-fonts-recommended, texlive-binaries, texlive-latex-base, texlive-publishers, 
@@ -44,7 +47,9 @@
 % sudo apt-get install  texlive-fonts-recommended texlive-binaries texlive-latex-base texlive-publishers
 % sudo apt-get install  texlive-latex-extra biblatex texstudio
 
-% USAGE INSTRUCTIONS:
+%----------------------------------------------------------------------------------------
+%	Usage Instructions
+%----------------------------------------------------------------------------------------
 % Get more information about latex package by using Terminal command   texdoc <packagename> 
 % for example: texdoc rotating     or     texdoc aastex    or texdoc titling
 % or visit this website: http://www.texdoc.net/   and search for the packagename
@@ -87,14 +92,19 @@
 % http://www.ottobib.com/
 % http://scholar.google.be
 
-%% Reproducible, scientific, open-source report sharing procedure:
+%----------------------------------------------------------------------------------------
+%	Reproducible, scientific, open-source report sharing procedure:
+%----------------------------------------------------------------------------------------
+
 %% 1) install R, RStudio, texmaker and knitr
 %% 2) Create .Rnw document using texmaker+knitr - knitr is slightly better than Sweave
 %% 3) Add an explanatory comment after each line of R code inside the .Rnw document
 %% 4) Share new .Rnw document and source .csv datafiles on https://github.com/
-%%
-%% texmaker+knitr install and configuration procedure:
-%%
+
+%----------------------------------------------------------------------------------------
+%	texmaker+knitr install and configuration procedure:
+%----------------------------------------------------------------------------------------
+
 %% cd; rm knitr_*.tar.gz
 %% git clone https://github.com/yihui/knitr.git
 %% sudo apt-get update
