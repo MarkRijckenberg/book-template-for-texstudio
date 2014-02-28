@@ -257,11 +257,12 @@ The Search for a Title\par % Book title
 % How to use knitr and bash to download a file from the Internet:
 <<engine='bash'>>=
 cd 
-wget "http://www.openintro.org/stat/data/arbuthnot.R"
+% remove the % in the following line to enable the download
+% wget "http://www.openintro.org/stat/data/arbuthnot.R"
 @
 
 % How to integrate python code using knitr:
-<<engine='python'>>=
+<<engine='python', echo=FALSE>>=
 def testing():
     return "Hello, World!"
 print testing()
@@ -288,12 +289,10 @@ arbuthnot$boys
 @
 
 <<plot-girls-vs-year, eval=TRUE>>=
-plot(x = arbuthnot$year, y = arbuthnot$girls)
+library(ggplot2)
+qplot(x = arbuthnot$year, y = arbuthnot$girls, color=arbuthnot$year)
 @
 
-<<plot-girls-vs-year-line, eval=TRUE>>=
-plot(x = arbuthnot$year, y = arbuthnot$girls, type = "l")
-@
 
 <<calc-total-bapt-numbers, eval=TRUE>>=
 5218 + 4683
@@ -304,7 +303,8 @@ arbuthnot$boys + arbuthnot$girls
 @
 
 <<plot-total-vs-year, eval=TRUE>>=
-plot(arbuthnot$year, arbuthnot$boys + arbuthnot$girls, type = "l")
+library(ggplot2)
+qplot(x = arbuthnot$year, y = arbuthnot$boys + arbuthnot$girls, geom="line")
 @
 
 %------------------------------------------------
@@ -344,6 +344,7 @@ Lists are useful to present information in a concise and/or ordered way\footnote
 \item[Word] Definition
 \item[Comment] Elaboration
 \end{description}
+
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 2
