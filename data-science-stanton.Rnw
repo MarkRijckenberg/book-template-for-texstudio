@@ -1,0 +1,289 @@
+%----------------------------------------------------------------------------------------
+%  Prerequisites
+%----------------------------------------------------------------------------------------
+
+% Prerequisites: Lubuntu 13.10 or newer, texlive-latex-extra, texlive-bibtex-extra, latex-xcolor, biber, 
+%                texlive-fonts-recommended, texlive-binaries, texlive-latex-base, texlive-publishers, 
+%                texlive-latex-extra, biblatex, texmaker 4.1.1 or newer
+% Run following Terminal command to download and install all the prerequisites in Lubuntu 13.10 or newer:
+% sudo apt-get update && sudo apt-get install texlive-latex-extra texlive-bibtex-extra latex-xcolor biber
+% sudo apt-get install  texlive-fonts-recommended texlive-binaries texlive-latex-base texlive-publishers
+% sudo apt-get install  texlive-latex-extra biblatex texstudio
+
+%----------------------------------------------------------------------------------------
+%	Usage Instructions
+%----------------------------------------------------------------------------------------
+% Get more information about latex package by using Terminal command   texdoc <packagename> 
+% for example: texdoc rotating     or     texdoc aastex    or texdoc titling
+% or visit this website: http://www.texdoc.net/   and search for the packagename
+% Texmaker 4.1.1 or newer binary 
+
+% Build procedure in texmaker 4.1.1 or newer:
+% step 1) Configuration:
+%
+% Texmaker::Options::Configure Texmaker::Commands::R Sweave 
+% command should be  Rscript -e "library(knitr); knit('%.Rnw')"
+%
+% Texmaker::Options::Configure Texmaker::Quick Build command option should be 
+% Sweave + pdflatex + View PDF
+%
+% Texmaker::Options::Configure Texmaker::Commands::Bib(la)tex should be   biber %
+%
+% step 2) OPTIONAL: press Tools:Clean within texmaker to delete old output files
+% step 3) REQUIRED: press F1 to build and view output PDF
+% step 4) REQUIRED: press F12 to generate index file and create index chapter
+% step 5) REQUIRED: press F11 to generate bibliography using biber (not bibtex)
+% step 6) REQUIRED: press F1  to build and view output PDF
+% step 7) REQUIRED: press F1  once more to view more details about bibliography
+
+% and to correctly compile this .Rnw file into a valid .PDF output file.
+% always save graphics files in f<sequence-number>.PDF format, not in .JPG or .PNG format
+% use convert command to convert picture to .pdf format:
+% example: convert hubble-telescope-photos-mohsin-nazir-mughal-freelance-designer.jpg hubble.pdf
+
+% The tocbibind package can automatically add bibliography, index, TOC, LOF, and LOT to the table
+% of contents. It's even capable of using numbered headings instead of the default
+% unnumbered ones.
+
+% Use \cite[23]{kennedy1998cationic}  for example when citing page 23 from bibliography reference contained in the .bib 
+% bibtex file
+% Use Figure \ref{fig:Array} on page \pageref{fig:Array} for example when referring to a figure at the end of the
+% document
+
+% Other handy URL's:
+% http://detexify.kirelabs.org/classify.html
+% http://www.ottobib.com/
+% http://scholar.google.be
+
+%----------------------------------------------------------------------------------------
+%	Reproducible, scientific, open-source report sharing procedure:
+%----------------------------------------------------------------------------------------
+
+%% 1) install R, RStudio, texmaker and knitr
+%% 2) Create .Rnw document using texmaker+knitr - knitr is slightly better than Sweave
+%% 3) Add an explanatory comment after each line of R code inside the .Rnw document
+%% 4) Share new .Rnw document and source .csv datafiles on https://github.com/
+
+%----------------------------------------------------------------------------------------
+%	texmaker+knitr install and configuration procedure in Ubuntu 13.10 64-bit or newer:
+%----------------------------------------------------------------------------------------
+
+%% cd; rm knitr_*.tar.gz
+%% git clone https://github.com/yihui/knitr.git
+%% sudo apt-get update
+%% sudo apt-get install texinfo texmaker r-base-core r-base
+%% sudo apt-get install texlive-fonts-extra
+%% R CMD build knitr
+%% R CMD INSTALL knitr_*.tar.gz
+%% sudo cp ~/knitr/inst/bin/knit /usr/bin/knit
+%% cd knitr
+%% make check
+%% cd;git clone https://github.com/MarkRijckenberg/book-template-for-texstudio.git
+%% cd book-template-for-texstudio/
+%% texmaker main.Rnw 
+%% Configure texmaker version 4.1.1 or newer as follows:
+%% Texmaker::Options::Configure Texmaker::Commands::R Sweave command should be  Rscript -e "library(knitr); knit('%.Rnw')"
+%% Texmaker::Options::Configure Texmaker::Commands::Bib(la)tex should be   biber %
+%% Texmaker::Options::Configure Texmaker::Quick Build command option should be Sweave + pdflatex + View PDF
+%% Then press F1,F12,F11,F1,F1 to compile from .Rnw to .tex to .pdf file and to preview it automatically.
+
+\documentclass[a4paper]{article}
+\title{Version 3 An Introduction to Data Science}
+\author{Jeffrey Stanton, Syracuse University}
+
+\usepackage{hyperref}
+\begin{document}
+\maketitle
+
+\newcounter {counter} {}
+\setcounter {counter} {8}
+
+% chapter 9
+
+\newpage
+\stepcounter{counter}
+{\Huge Chapter \arabic  {counter}}
+\newline
+\newline
+
+<<library-stringr>>=
+if (!require("stringr")) {
+  install.packages("stringr", repos="http://cran.rstudio.com/") 
+  library("stringr")
+}
+@
+
+<<library-modeest>>=
+if (!require("modeest")) {
+  install.packages("modeest", repos="http://cran.rstudio.com/") 
+  library("modeest")
+}
+@
+
+<<library-twitteR>>=
+if (!require("twitteR")) {
+  install.packages("twitteR", repos="http://cran.rstudio.com/") 
+  library("twitteR")
+}
+@
+
+<<function-TweetFrame>>=
+# TweetFrame() - Return a dataframe based on a
+#search of Twitter
+TweetFrame<-function(searchTerm, maxTweets)
+
+{
+twtList<-
+searchTwitter(searchTerm,n=maxTweets)
+   return(do.call("rbind",+
+lapply(twtList,as.data.frame))) 
+} 
+@
+
+<<function-MyMode>>=
+MyMode <- function(myVector)
+{
+uniqueValues <- unique(myVector)
+uniqueCounts <- tabulate( +
+match(myVector,uniqueValues))
+return(uniqueValues[which.max(uniqueCounts)])
+}
+@
+
+You have just created your first "function" in R.
+
+<<tinyData>>=
+tinyData <- c(1,2,1,2,3,3,3,4,5,4,5,9,9,9,9,9)
+tinyData<-c(tinyData,5,5,5,1,1,1)
+MyMode(tinyData)
+tinyData
+mfv(tinyData)
+mfv
+@
+
+% chapter 10
+
+\newpage
+\stepcounter{counter}
+{\Huge Chapter \arabic  {counter}}
+\newline
+\newline
+
+Cannot execute this chapter, because my phone carrier in Belgium is not supported yet by Twitter.
+
+<<tweetDF>>=
+tweetDF <- TweetFrame("#ladygaga",500)
+@
+
+
+% chapter 11
+
+\newpage
+\stepcounter{counter}
+{\Huge Chapter \arabic  {counter}}
+\newline
+\newline
+
+Random Poisson number generator
+\newline
+
+Define new function called DelayProbability
+\newline
+
+<<DelayProbability>>=
+# Like ArrivalProbability, but works with unsorted list
+# of delay times
+DelayProbability<-function(delays, increment, max)
+{
+# Initialize an empty vector
+plist <- NULL
+# Probability is defined over the size of this sample
+# of arrival times
+delayLen <- length(delays)
+# May not be necessary, but checks for input mistake
+if (increment>max) {return(NULL)}
+for (i in seq(increment, max, by=increment))
+{
+# logical test <=i provides list of TRUEs and FALSEs
+# of length = timeLen, then sum() counts the TRUEs
+plist<-c(plist,(sum(delays<=i)/delayLen))
+}
+return(plist)
+}
+@
+
+<<rpois>>=
+rpois(10,3)
+mean(rpois(100,3))
+var(rpois(100,3))
+hist(rpois(1000,3))
+hist(rpois(1000,10))
+sum(rpois(1000,10)<=10)
+DelayProbability(rpois(100,10),1,20)
+plot(DelayProbability(rpois(100,10),1,20), col=2)
+points(DelayProbability(rpois(100,3),1,20), col=3)
+plot(DelayProbability(rpois(100,10),1,20))
+for (i in 1:15) {points(DelayProbability(rpois(100,10),1,20))}
+ppois(3, lambda=10)
+plot(1,20,xlim=c(0,20),ylim=c(0,1))
+for (i in 1:20) {points(i,ppois(i,lambda=10)) }
+
+mean(rpois(100000,10))
+var(rpois(100000,10))
+sum(rpois(100000,10)<=10)/100000
+ppois(10,lambda=10)
+qpois(0.58303,lambda=10)
+qpois(ppois(10, lambda=10), lambda=10)
+poisson.test(58638, 100000)
+poisson.test(5863, 10000)
+poisson.test(586, 1000)
+poisson.test(58, 100)
+names(poisson.test(58, 100))
+poisson.test(58, 100)$conf.int
+@
+
+% chapter 12
+
+\newpage
+\stepcounter{counter}
+{\Huge Chapter \arabic  {counter}}
+\newline
+\newline
+
+Cannot execute this chapter, because my phone carrier in Belgium is not supported yet by Twitter.
+
+<<tweetDF2>>=
+tweetDF <- TweetFrame("#ladygaga",500)
+@
+
+
+% chapter 13
+
+\newpage
+\stepcounter{counter}
+{\Huge Chapter \arabic  {counter}}
+\newline
+\newline
+
+Continue on page 126 in Chapter 13.
+
+
+\newpage
+PDF version of book: 
+\newline
+
+\url{https://drive.google.com/file/d/0B6iefdnF22XQeVZDSkxjZ0Z5VUE/edit?usp=sharing}
+\newline
+URL:  
+\newline
+
+\url{http://jsresearch.net/}  
+\newline
+
+Book license: 
+\newline
+
+Book is distributed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 license.
+
+\end{document}
+
