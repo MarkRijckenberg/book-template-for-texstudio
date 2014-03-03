@@ -155,6 +155,15 @@ return(uniqueValues[which.max(uniqueCounts)])
 
 You have just created your first "function" in R.
 
+Example of use of xtable R package:
+
+<<results='asis', echo=FALSE>>=
+# Load xtable
+library(xtable)
+# Create LaTeX table from M1 and show the output markup
+xtable(M1, caption = "Linear Regression, Dependent Variable: Exam Score", label = "BasicXtableSummary",digits = 1)
+@
+
 <<tinyData>>=
 sessionInfo()
 tinyData <- c(1,2,1,2,3,3,3,4,5,4,5,9,9,9,9,9)
