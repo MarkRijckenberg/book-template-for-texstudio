@@ -154,12 +154,27 @@ return(uniqueValues[which.max(uniqueCounts)])
 @
 
 You have just created your first "function" in R.
+\newline
+\newline
 
-Example of use of xtable R package:
+Example of use of xtable R package and swiss dataframe (included by default in R):
 
-<<results='asis', echo=FALSE>>=
+\newline
+Source:
+\newline
+\url{https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearch_Chapter9.pdf}
+\newline
+
+<<lmswiss, results='asis', echo=FALSE>>=
 # Load xtable
 library(xtable)
+# Fit simple linear regression model
+M1 <- lm(Examination ~ Education, data = swiss)
+# Show M1 class
+class(M1)
+# Show summary of M1 model object
+summary(M1)
+
 # Create LaTeX table from M1 and show the output markup
 xtable(M1, caption = "Linear Regression, Dependent Variable: Exam Score", label = "BasicXtableSummary",digits = 1)
 @
