@@ -98,10 +98,10 @@
 \begin{document}
 \maketitle
 
-% chapter from other book:
+% chapter from other book ReproducibleResearch stored at github.com:
 
 \newpage
-Example of use of xtable R package and swiss dataframe (included by default in R):
+Example of use of xtable and apsrtable R packages and swiss dataframe (included by default in R):
 
 \newline
 Source:
@@ -127,6 +127,9 @@ M2 <- lm(Examination ~ Education + Agriculture, data = swiss)
 M3 <- lm(Examination ~ Education + Agriculture + Catholic, data = swiss)
 M4 <- lm(Examination ~ Education + Agriculture + Catholic + Infant.Mortality, data = swiss)
 M5 <- lm(Examination ~ Education + Agriculture + Catholic + Infant.Mortality + Fertility, data = swiss)
+# Load apsrtable package
+library(apsrtable)
+?apsrtable
 @
 
 \begin{table}
