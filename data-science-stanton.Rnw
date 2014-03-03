@@ -95,6 +95,7 @@
 \author{Jeffrey Stanton, Syracuse University}
 
 \usepackage{hyperref}
+\usepackage{dcolumn}
 \begin{document}
 \maketitle
 
