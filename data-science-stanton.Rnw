@@ -98,10 +98,55 @@
 \begin{document}
 \maketitle
 
+% chapter from other book:
+
+\newpage
+Example of use of xtable R package and swiss dataframe (included by default in R):
+
+\newline
+Source:
+\newline
+\url{https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearch_Chapter9.pdf}
+\newline
+
+<<lmswiss, results='asis', echo=FALSE>>=
+# Load xtable
+library(xtable)
+# Fit simple linear regression model
+M1 <- lm(Examination ~ Education, data = swiss)
+# Show M1 class
+class(M1)
+# Show summary of M1 model object
+summary(M1)
+
+# Create LaTeX table from M1 and show the output markup
+xtable(M1, caption = "Linear Regression, Dependent Variable: Exam Score", label = "BasicXtableSummary",digits = 1)
+
+# Estimated nested regression models
+M2 <- lm(Examination ~ Education + Agriculture, data = swiss)
+M3 <- lm(Examination ~ Education + Agriculture + Catholic, data = swiss)
+M4 <- lm(Examination ~ Education + Agriculture + Catholic + Infant.Mortality, data = swiss)
+M5 <- lm(Examination ~ Education + Agriculture + Catholic + Infant.Mortality + Fertility, data = swiss)
+@
+
+\begin{table}
+  \caption{Example Nested Estimates Table with \emph{aprstable}}
+  \label{BasicApsrTableExample}
+    \begin{center}
+      <<lmswiss2, results='asis', echo=FALSE>>=
+      # Load apsrtable package
+      library(apsrtable)
+      # Create nested regression model table
+      apsrtable(M1, M2, M3, M4, M5, Sweave = TRUE, stars = "default")
+      @
+    \end{center}
+\end{table}
+
+
 \newcounter {counter} {}
 \setcounter {counter} {8}
 
-% chapter 9
+% chapter 9 from Data Science book from Mr. Stanton
 
 \newpage
 \stepcounter{counter}
@@ -157,46 +202,7 @@ You have just created your first "function" in R.
 \newline
 \newline
 
-Example of use of xtable R package and swiss dataframe (included by default in R):
 
-\newline
-Source:
-\newline
-\url{https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearch_Chapter9.pdf}
-\newline
-
-<<lmswiss, results='asis', echo=FALSE>>=
-# Load xtable
-library(xtable)
-# Fit simple linear regression model
-M1 <- lm(Examination ~ Education, data = swiss)
-# Show M1 class
-class(M1)
-# Show summary of M1 model object
-summary(M1)
-
-# Create LaTeX table from M1 and show the output markup
-xtable(M1, caption = "Linear Regression, Dependent Variable: Exam Score", label = "BasicXtableSummary",digits = 1)
-
-# Estimated nested regression models
-M2 <- lm(Examination ~ Education + Agriculture, data = swiss)
-M3 <- lm(Examination ~ Education + Agriculture + Catholic, data = swiss)
-M4 <- lm(Examination ~ Education + Agriculture + Catholic + Infant.Mortality, data = swiss)
-M5 <- lm(Examination ~ Education + Agriculture + Catholic + Infant.Mortality + Fertility, data = swiss)
-@
-
-\begin{table}
-  \caption{Example Nested Estimates Table with \emph{aprstable}}
-  \label{BasicApsrTableExample}
-    \begin{center}
-      <<results='asis', echo=FALSE>>=
-      # Load apsrtable package
-      library(apsrtable)
-      # Create nested regression model table
-      apsrtable(M1, M2, M3, M4, M5, Sweave = TRUE, stars = "default")
-      @
-    \end{center}
-\end{table}
 
 <<tinyData>>=
 sessionInfo()
