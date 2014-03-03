@@ -268,7 +268,9 @@ def testing():
 print testing()
 @
 
+% print R session info
 <<load-abrbuthnot-data, eval=TRUE>>=
+sessionInfo()
 source("http://www.openintro.org/stat/data/arbuthnot.R")
 @
 
