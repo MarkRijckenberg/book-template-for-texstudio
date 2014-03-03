@@ -71,6 +71,7 @@ The panel on the left is where the action happens.  It's called the \emph{consol
 To get you started, enter the following command at the R prompt (i.e. right after $>$ on the console).  You can either type it in manually or copy and paste it from this document.
 
 <<load-abrbuthnot-data, eval=TRUE>>=
+sessionInfo()
 source("http://www.openintro.org/stat/data/arbuthnot.R")
 @
 
