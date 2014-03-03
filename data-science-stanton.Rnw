@@ -103,12 +103,25 @@
 
 \newpage
 Example of use of xtable and apsrtable R packages and swiss dataframe (included by default in R):
-
 \newline
 Source:
 \newline
 \url{https://github.com/christophergandrud/RepResR-RStudio/raw/gh-pages/other/ReproducibleResearch_Chapter9.pdf}
 \newline
+
+<<library-xtable>>=
+if (!require("xtable")) {
+  install.packages("xtable", repos="http://cran.rstudio.com/") 
+  library("xtable")
+}
+@
+
+<<library-apsrtable>>=
+if (!require("apsrtable")) {
+  install.packages("apsrtable", repos="http://cran.rstudio.com/") 
+  library("apsrtable")
+}
+@
 
 <<lmswiss, results='asis', echo=FALSE>>=
 # Load xtable
