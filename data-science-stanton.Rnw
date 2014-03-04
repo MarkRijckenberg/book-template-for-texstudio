@@ -5,10 +5,13 @@
 % Prerequisites: Lubuntu 13.10 or newer, texlive-latex-extra, texlive-bibtex-extra, latex-xcolor, biber, 
 %                texlive-fonts-recommended, texlive-binaries, texlive-latex-base, texlive-publishers, 
 %                texlive-latex-extra, biblatex, texmaker 4.1.1 or newer
+%
 % Run following Terminal command to download and install all the prerequisites in Lubuntu 13.10 or newer:
-% sudo apt-get update && sudo apt-get install texlive-latex-extra texlive-bibtex-extra latex-xcolor biber
+% sudo apt-get update
+% sudo apt-get install  texlive-latex-extra texlive-bibtex-extra latex-xcolor biber
 % sudo apt-get install  texlive-fonts-recommended texlive-binaries texlive-latex-base texlive-publishers
 % sudo apt-get install  texlive-latex-extra biblatex texstudio
+% sudo apt-get install  mysql-server libmysqlclient-dev
 
 %----------------------------------------------------------------------------------------
 %	Usage Instructions
@@ -335,9 +338,103 @@ tweetDF <- TweetFrame("#ladygaga",500)
 \newline
 \newline
 
-Continue on page 126 in Chapter 13.
+
+Cannot execute this chapter, because my phone carrier in Belgium is not supported yet by Twitter.
+
+<<tweetDF3>>=
+tweetDF <- TweetFrame("#ladygaga",500)
+@
 
 
+% chapter 14
+
+\newpage
+\stepcounter{counter}
+{\Huge Chapter \arabic  {counter}}
+\newline
+\newline
+
+<<library-gdata>>=
+if (!require("gdata")) {
+  install.packages("gdata", repos="http://cran.rstudio.com/") 
+  library("gdata")
+}
+@
+
+<<function-Numberize>>=
+Numberize <- function(inputVector)
+{
+# Get rid of commas
+inputVector<-str_replace_all(inputVector,",","")
+# Get rid of spaces
+inputVector<-str_replace_all(inputVector," ","")
+return(as.numeric(inputVector))
+}
+@
+
+<<NST>>=
+testFrame<-read.xls( "http://www.census.gov/popest/data/state/totals/2011/tables/NST-EST2011-01.xls")
+View(testFrame)
+str(testFrame)
+# the notation -1:-3 gets rid of the first three rows:
+testFrame<-testFrame[-1:-3,]
+# this command keeps the first five columns of the dataframe:
+testFrame<-testFrame[,1:5]
+tail(testFrame,1)
+# eliminate the last few rows because they only contain notes:
+testFrame<-testFrame[-58:-62,]
+# give the first column a proper name:
+tail(testFrame,1)
+testFrame$region <- testFrame[,1]
+tail(testFrame,1)
+testFrame<-testFrame[,-1]
+tail(testFrame,1)
+testFrame$region <- str_replace(testFrame$region,"\\.","")
+tail(testFrame,1)
+testFrame$april10census <-Numberize(testFrame$X)
+testFrame$april10base <-Numberize(testFrame$X.1)
+testFrame$july10pop <-Numberize(testFrame$X.2)
+testFrame$july11pop <-Numberize(testFrame$X.3)
+testFrame$april10census
+str(	testFrame$april10census)
+@
+
+<<library-RMySQLdemo>>=
+# Prerequisites in Ubuntu 13.10 64-bit before trying to install RMySQL:
+# Run these Terminal commands:
+# sudo apt-get update
+# sudo apt-get install mysql-server libmysqlclient-dev
+
+if (!require("RMySQL")) {
+  install.packages("RMySQL", repos="http://cran.rstudio.com/") 
+  library("RMySQL")
+}
+@
+
+<<RMySQLdemo>>=
+con <- dbConnect(dbDriver("MySQL"), dbname = "test")
+dbWriteTable(con, "census", testFrame, overwrite = TRUE)
+dbListTables(con)
+dbGetQuery(con, "SELECT region, july11pop FROM
+census WHERE july11pop<1000000")
+@
+
+<<MapReducedemo>>=
+small.ints <- 1:10
+small.ints
+out <- lapply(small.ints, function(x) x^2)
+out
+@
+
+% chapter 15 Map Mashup
+
+\newpage
+\stepcounter{counter}
+{\Huge Chapter \arabic  {counter}}
+\newline
+\newline
+
+Continue on page 150.
 \newpage
 PDF version of book: 
 \newline
