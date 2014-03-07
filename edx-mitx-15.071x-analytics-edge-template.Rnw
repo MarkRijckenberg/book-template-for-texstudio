@@ -182,10 +182,9 @@ return(uniqueValues[which.max(uniqueCounts)])
 {\Huge Week \arabic  {counter} homework assignment}
 \newline
 \newline
-
 Not sharing homework contents on github.com. This is only a .Rnw template for students to reuse in texmaker.
 mvtWeek1.csv should be 15MB in size after download is finished
-See regulation 6 at the following URL:
+Please read section 6 HOMEWORK at the following URL:
 \newline
 \url{https://courses.edx.org/courses/MITx/15.071x/1T2014/4264e68418f34d839cf0b33a5da644b2/}
 
