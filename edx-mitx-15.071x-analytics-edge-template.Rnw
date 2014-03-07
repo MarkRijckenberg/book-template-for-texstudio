@@ -195,6 +195,7 @@ Please read section 6 HOMEWORK at the following URL:
 \url{https://courses.edx.org/courses/MITx/15.071x/1T2014/4264e68418f34d839cf0b33a5da644b2/}
 
 <<Homework1>>=
+sessionInfo()
 @
 
 % week 2 in course
