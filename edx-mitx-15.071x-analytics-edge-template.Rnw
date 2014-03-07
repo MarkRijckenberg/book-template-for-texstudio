@@ -110,6 +110,12 @@ Source:
 
 One homework assignment may be missed without a grade penalty.
 
+Performing backup of this document to a safe location:
+
+<<engine='bash'>>=
+cp  ~/book-template-for-texstudio/edx-mitx-15.071x-analytics-edge-template.Rnw  ~/edx-mitx-15.071x-analytics-edge-template.Rnw
+@
+
 <<library-RMySQLdemo>>=
 # Prerequisites in Ubuntu 13.10 64-bit before trying to install RMySQL:
 # Run these Terminal commands:
