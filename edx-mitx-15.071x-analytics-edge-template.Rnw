@@ -102,7 +102,6 @@
 \begin{document}
 \maketitle
 \newpage
-\newline
 Source:
 \newline
 \url{https://courses.edx.org/courses/MITx/15.071x/1T2014/info}
@@ -159,10 +158,6 @@ if (!require("twitteR")) {
 }
 @
 
-<<function-TweetFrame>>=
-# TweetFrame() - Return a dataframe based on a
-#search of Twitter
-TweetFrame<-function(searchTerm, maxTweets)
 
 <<function-MyMode>>=
 MyMode <- function(myVector)
