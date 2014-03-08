@@ -294,6 +294,10 @@ arbuthnot$boys
 @
 
 <<plot-girls-vs-year, eval=TRUE>>=
+if (!require("ggplot2")) {
+  install.packages("ggplot2", repos="http://cran.rstudio.com/") 
+  library("ggplot2")
+}
 library(ggplot2)
 p <- qplot(x = arbuthnot$year, y = arbuthnot$girls, color=arbuthnot$year)
 p + theme_bw()
