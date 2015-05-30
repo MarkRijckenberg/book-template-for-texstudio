@@ -134,6 +134,9 @@
 % Go into RStudio Server::Tools:Global Options::Sweave::configure following options as follows
 % Weave Rnw files using knitr
 % Typeset LaTeX into PDF using pdflatex
+% However, the generated PDF output will not be as good and accurate as the output via Texmaker.
+% For example: the bibliography will be missing. No solution yet, as I cannot force RStudio Server
+% to use biber instead of pdflatex
 
 
 %----------------------------------------------------------------------------------------
