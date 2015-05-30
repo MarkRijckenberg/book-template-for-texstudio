@@ -128,6 +128,15 @@
 %% Then press F1,F12,F11,F1,F1 to compile from .Rnw to .tex to .pdf file and to preview it automatically.
 
 %----------------------------------------------------------------------------------------
+%	RStudio Server configuration procedure in Ubuntu 13.10 64-bit or newer:
+%----------------------------------------------------------------------------------------
+
+% Go into RStudio Server::Tools:Global Options::Sweave::configure following options as follows
+% Weave Rnw files using knitr
+% Typeset LaTeX into PDF using pdflatex
+
+
+%----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
